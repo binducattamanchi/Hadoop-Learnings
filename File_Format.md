@@ -80,6 +80,10 @@ For nested structures, Parquet converts it into a flat column store, which is re
 
 # Serialization
 
+![image](https://user-images.githubusercontent.com/32897934/124365130-a438f000-dc63-11eb-800e-f3f09c7ae087.png)
+![image](https://user-images.githubusercontent.com/32897934/124365171-e4986e00-dc63-11eb-9bb0-3ce4886da20c.png)
+
+
  - Data serialization is a process that converts structure data manually back to the original form.
  - Serialize to translate data structures into a stream of data. Transmit this stream of data over the network or store it in DB regardless of the system architecture.
  - Isn't storing information in binary form or stream of bytes is the right approach.
