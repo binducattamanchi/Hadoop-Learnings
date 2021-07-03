@@ -15,6 +15,25 @@
 
 # MapReduce execution steps
 
+![image](https://user-images.githubusercontent.com/32897934/124363637-14427880-dc5a-11eb-8c05-d846988437c6.png)
+
+
+* Input Splits:
+
+An input to a MapReduce in Big Data job is divided into fixed-size pieces called input splits Input split is a chunk of the input that is consumed by a single map
+
+* Mapping
+
+This is the very first phase in the execution of map-reduce program. In this phase data in each split is passed to a mapping function to produce output values. In our example, a job of mapping phase is to count a number of occurrences of each word from input splits (more details about input-split is given below) and prepare a list in the form of <word, frequency>
+
+* Shuffling
+
+This phase consumes the output of Mapping phase. Its task is to consolidate the relevant records from Mapping phase output. In our example, the same words are clubed together along with their respective frequency.
+
+* Reducing
+
+In this phase, output values from the Shuffling phase are aggregated. This phase combines values from Shuffling phase and returns a single output value. In short, this phase summarizes the complete dataset.
+
 # Yarn execution
 
 ![image](https://user-images.githubusercontent.com/32897934/124363370-7ac69700-dc58-11eb-92e0-627681fe6d91.png)
